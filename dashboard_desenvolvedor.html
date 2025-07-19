@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <header class="header">
+                <div class="header-logos">
+                    <img src="Logo.png" alt="Logo do Chatbot" class="logo-icon">
+                    <img src="Nome-dev.png" alt="Nome Extend" class="logo-name">
+                </div>
+               
+            </header>
+
+            <div class="dashboard-section">
+                <h2>Perguntas Pendentes</h2>
+                <p>Responda as perguntas para treinar o bot e resolver os chamados dos usuários.</p>
+                <div id="pending-questions-list" class="item-list">
+                    </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h2>Base de Conhecimento</h2>
+                <p>Adicione ou edite manualmente as perguntas e respostas do bot.</p>
+                <form id="qa-form">
+                    <input type="hidden" id="qa-id">
+                    <div class="form-group">
+                        <label for="question-input" class="form-label">Pergunta</label>
+                        <input type="text" id="question-input" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="answer-input" class="form-label">Resposta</label>
+                        <textarea id="answer-input" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar na Base</button>
+                </form>
+
+                <div id="knowledge-base-list" class="item-list" style="margin-top: 2rem;">
+                    </div>
+            </div>
+
+            <div class="page-navigation">
+                <a href="chat_usuario.html">Voltar para o Chat</a>
+            </div>
+        </main>
+    </div>
+
+    <div class="accessibility-fab" title="Suporte de Acessibilidade">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256c0 17.7-14.3 32-32 32h-32v192h-64V320H144v160H80V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32h352c17.7 0 32 14.3 32 32zM224 32a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+    </div>
+
+    <div class="accessibility-menu">
+        <div class="access-menu-group">
+            <span class="access-menu-label">Tamanho da Fonte</span>
+            <div class="font-size-controls">
+                <button id="decrease-font" class="btn btn-primary font-size-btn">A-</button>
+                <button id="reset-font" class="btn btn-primary font-size-btn">A</button>
+                <button id="increase-font" class="btn btn-primary font-size-btn">A+</button>
+            </div>
+        </div>
+        <div class="access-menu-group">
+            <div class="theme-switcher">
+                <span class="access-menu-label">Alto Contraste</span>
+                <label class="theme-toggle">
+                    <input type="checkbox" id="contrast-toggle-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

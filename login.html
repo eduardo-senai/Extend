@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" style="max-width: 500px;">
+        <main class="main-content">
+            <header class="header">
+                <div class="header-logo">
+                    <img src="Nome-dev.png" alt="Nome Extend" class="logo-name">
+                </div>
+            </header>
+
+            <p>Por favor, insira suas credenciais para acessar o painel de controle do desenvolvedor.</p>
+
+            <form action="dashboard_desenvolvedor.html">
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="access-key" class="form-label">Chave de Acesso</label>
+                    <input type="text" id="access-key" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Entrar</button>
+            </form>
+
+            <div class="page-navigation">
+                <a href="chat_usuario.html">Voltar para a área do usuário</a>
+            </div>
+        </main>
+    </div>
+
+    <div class="accessibility-fab" title="Suporte de Acessibilidade">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256c0 17.7-14.3 32-32 32h-32v192h-64V320H144v160H80V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32h352c17.7 0 32 14.3 32 32zM224 32a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+    </div>
+
+    <div class="accessibility-menu">
+        <div class="access-menu-group">
+            <span class="access-menu-label">Tamanho da Fonte</span>
+            <div class="font-size-controls">
+                <button id="decrease-font" class="btn btn-primary font-size-btn">A-</button>
+                <button id="reset-font" class="btn btn-primary font-size-btn">A</button>
+                <button id="increase-font" class="btn btn-primary font-size-btn">A+</button>
+            </div>
+        </div>
+        <div class="access-menu-group">
+            <div class="theme-switcher">
+                <span class="access-menu-label">Alto Contraste</span>
+                <label class="theme-toggle">
+                    <input type="checkbox" id="contrast-toggle-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Chamados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <main class="main-content">
+            <header class="header">
+                <h1>Meus Chamados</h1>
+            </header>
+
+            <p>Aqui você pode acompanhar o status das perguntas que nosso assistente virtual não conseguiu responder. Nossa equipe está trabalhando para atendê-lo.</p>
+
+            <div id="chamados-list" class="item-list">
+                </div>
+
+            <div class="page-navigation">
+                <a href="index.html">Voltar ao Painel do Cartório</a>
+                <span class="nav-separator">|</span>
+                <a href="chat_usuario.html">Abrir Novo Chat</a>
+                <button id="clear-chamados-btn" class="btn btn-danger" style="margin-left: auto;">Limpar Histórico</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="accessibility-fab" title="Suporte de Acessibilidade">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M432 256c0 17.7-14.3 32-32 32h-32v192h-64V320H144v160H80V288H48c-17.7 0-32-14.3-32-32s14.3-32 32-32h352c17.7 0 32 14.3 32 32zM224 32a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+    </div>
+
+    <div class="accessibility-menu">
+        <div class="access-menu-group">
+            <span class="access-menu-label">Tamanho da Fonte</span>
+            <div class="font-size-controls">
+                <button id="decrease-font" class="btn btn-primary font-size-btn">A-</button>
+                <button id="reset-font" class="btn btn-primary font-size-btn">A</button>
+                <button id="increase-font" class="btn btn-primary font-size-btn">A+</button>
+            </div>
+        </div>
+        <div class="access-menu-group">
+            <div class="theme-switcher">
+                <span class="access-menu-label">Alto Contraste</span>
+                <label class="theme-toggle">
+                    <input type="checkbox" id="contrast-toggle-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

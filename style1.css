@@ -1,0 +1,277 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho Principal */
+.main-header {
+    background: linear-gradient(to right, #0d47a1, #1976d2);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffc107;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.main-header p {
+    margin-top: 5px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Navegação Principal */
+.main-nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main-nav ul li a {
+    color: #0d47a1;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: #e3f2fd;
+    color: #0b3a82;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #0d47a1;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Cards de Serviço */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card-icon {
+    font-size: 40px;
+    color: #1565c0;
+    margin-bottom: 20px;
+    background-color: #e3f2fd;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #666;
+    flex-grow: 1;
+}
+
+.btn-card {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-card:hover {
+    background-color: #0d47a1;
+}
+
+/* Formulário */
+.appointment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.appointment-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Botão de Help Desk e Notificação */
+.help-desk-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #7e22ce; 
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.help-desk-button:hover {
+    transform: scale(1.1);
+    background-color: #581c87;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #dc2626; /* Vermelho */
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ==========================================================================
+   ESTILOS PARA CELULAR (RESPONSIVIDADE)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 30px 15px;
+    }
+
+    .main-header h1 {
+        font-size: 1.8em;
+    }
+
+    .main-header p {
+        font-size: 1em;
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Coloca os links um embaixo do outro */
+        align-items: center;
+        gap: 5px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .help-desk-button {
+        width: 55px;
+        height: 55px;
+        font-size: 26px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
